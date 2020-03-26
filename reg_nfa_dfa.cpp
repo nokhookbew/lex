@@ -342,7 +342,7 @@ vector <int> eclosure(int nfa_table[][col], int x){
                 continue;
             else{
                 s.push(nfa_table[y][4]);
-                m[nfa_table[y][4]] == -1;
+                m[nfa_table[y][4]] = -1;
             }
         }
     }
@@ -451,6 +451,7 @@ bool check_valid(string word){
 
     if(i==len)
         return true;
+    return false;
 }
 
 int nfa_dfa(int nfa_table[][col],int states,string dfa_tab[][3]){
